@@ -7,6 +7,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: rgb(217, 228, 251);
+    font-size: 1.5em;
 }
 .linktree-container {
     text-align: center;
@@ -17,8 +18,8 @@ body {
     margin-bottom: 20px;
 }
 .profile img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
