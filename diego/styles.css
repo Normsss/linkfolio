@@ -36,13 +36,11 @@ body {
     display: block;
     text-decoration: none;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #2397ba3e;
     padding: 5px 15px;
-    border: 1px solid #000000;
-    border-radius: 100px;
+    border-radius: 10px;
     margin: 20px 0;
     transition: background-color 0.3s ease;
-    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.75);
 }
 .link:hover {
     background-color: #c3c3c3;
