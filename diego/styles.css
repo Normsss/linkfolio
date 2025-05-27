@@ -6,14 +6,27 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(248, 251, 217, 0.74);
+    /* background-color: #75b38e; */
     font-size: 15px;
 }
 .linktree-container {
     text-align: center;
-    width: 80%;
     padding: 30px;
 }
+
+.profile-side {
+    height: 100%;
+}
+
+.trayex-side {
+    width: 50%;
+    height: 100%;
+}
+
+.title {
+    color: #026f2e;
+}
+
 .profile {
     margin-bottom: 20px;
 }
@@ -30,18 +43,32 @@ body {
 }
 .profile p {
     margin: 5px 0 15px;
-    color: #555;
+    color: #026f2e;
 }
 .link {
     display: block;
     text-decoration: none;
-    color: #000000;
-    background-color: #2397ba3e;
+    color: #026f2e;
+    background-color: #ffffff3e;
     padding: 5px 15px;
     border-radius: 10px;
     margin: 20px 0;
     transition: background-color 0.5s linear;
 }
 .link:hover {
-    background-color: #c3c3c3;
+    /* background-color: #75b38e; */
+    cursor: pointer;
+    color: #75b38e;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        display: block;
+    }
+
+    .linktree-container {
+        width: 90%;
+    }
+    
 }
