@@ -15,16 +15,15 @@ body {
 }
 
 .profile-side {
-    height: 100%;
+    width: 80%;
 }
 
 .trayex-side {
-    width: 50%;
-    height: 100%;
+    width: 100%;
 }
 
 .title {
-    color: #026f2e;
+    color: #000000;
 }
 
 .profile {
@@ -43,18 +42,20 @@ body {
 }
 .profile p {
     margin: 5px 0 15px;
-    color: #026f2e;
+    color:  #000000;
 }
 .link {
     display: block;
     text-decoration: none;
-    color: #026f2e;
+    color:  #000000;
     background-color: #ffffff3e;
     padding: 5px 15px;
     border-radius: 10px;
     margin: 20px 0;
     transition: background-color 0.5s linear;
+    text-align: right;
 }
+
 .link:hover {
     /* background-color: #75b38e; */
     cursor: pointer;
@@ -69,6 +70,10 @@ body {
 
     .linktree-container {
         width: 90%;
+    }
+
+    .link {
+        text-align: center;
     }
     
 }
