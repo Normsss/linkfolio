@@ -1,3 +1,19 @@
+:root {
+  --white: #ffffff;
+  --dark:rgb(90, 90, 90);
+  --color1: #3d063b;
+  --color2: #75b38e;
+  --color3: rgb(253, 205, 230) ;
+  --mesh: background: var(--white);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
 body {
     font-family: "EB Garamond", serif;
     margin: 0;
@@ -6,9 +22,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background-color: #75b38e; */
     font-size: 15px;
 }
+
 .linktree-container {
     text-align: center;
     padding: 30px;
@@ -23,7 +39,7 @@ body {
 }
 
 .title {
-    color: #000000;
+    color: var(--color1);
 }
 
 .profile {
@@ -40,27 +56,66 @@ body {
     margin: 0;
     font-size: 1.5em;
 }
+
 .profile p {
     margin: 5px 0 15px;
-    color:  #000000;
+    color: var(--color1);
 }
+
 .link {
     display: block;
     text-decoration: none;
-    color:  #000000;
-    background-color: #ffffff3e;
-    padding: 5px 15px;
+    color: var(--color1);
     border-radius: 10px;
     margin: 20px 0;
-    transition: background-color 0.5s linear;
     text-align: right;
 }
 
-.link:hover {
-    /* background-color: #75b38e; */
-    cursor: pointer;
-    color: #75b38e;
+.link > p {
+    margin-bottom: 10px;
 }
+
+.link .link-title {
+    font-size: 18px;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: var(--color2);
+}
+
+/* footer */
+footer {
+    /* background-color: var(--color2); */
+    padding: 1rem;
+    text-align: right;
+    color: var(--color1);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+footer > div > a {
+    color: var(--color1);
+}
+
+footer > div > p > a {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+footer > div > p > a:hover {
+    opacity: 60%;
+    color: var(--dark);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    margin-right: 10px;
+}
+/* end footer */
 
 @media screen and (max-width: 768px) {
     body {
@@ -69,11 +124,24 @@ body {
     }
 
     .linktree-container {
-        width: 90%;
+        width: 100%;
     }
 
     .link {
         text-align: center;
+    }
+
+    .link .link-title {
+        font-size: 16px;
+    }
+
+    .profile-side {
+        padding-top: 50px;
+    }
+
+    footer {
+        position: relative;
+        padding: 1rem 0;
     }
     
 }
