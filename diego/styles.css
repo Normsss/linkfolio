@@ -127,6 +127,10 @@ footer > div > p > a:hover {
         width: 100%;
     }
 
+    .trayex-side {
+        padding-top: 0;
+    }
+
     .link {
         text-align: center;
     }
