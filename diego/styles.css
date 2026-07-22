@@ -84,6 +84,14 @@ body {
     color: var(--color2);
 }
 
+.title > .link {
+    margin: 6px 0;
+}
+
+.publication-list {
+    list-style: none;
+}
+
 /* footer */
 footer {
     /* background-color: var(--color2); */
